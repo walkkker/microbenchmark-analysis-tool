@@ -1,0 +1,58 @@
+Running OpenMP benchmark version 3.0
+	2 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	62 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.112367   0.112061   0.113263    0.000307      0
+
+reference time 1 time     = 0.112367 microseconds +/- 0.000601
+
+--------------------------------------------------------
+Computing PRIVATE 2187 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.358882   1.349752   1.487471    0.030333      1
+
+PRIVATE 2187 time     = 1.358882 microseconds +/- 0.059452
+PRIVATE 2187 overhead = 1.246515 microseconds +/- 0.060054
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 2187 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.331483   2.205266   2.471349    0.078454      0
+
+FIRSTPRIVATE 2187 time     = 2.331483 microseconds +/- 0.153771
+FIRSTPRIVATE 2187 overhead = 2.219116 microseconds +/- 0.154372
+
+--------------------------------------------------------
+Computing COPYPRIVATE 2187 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                3.307835   3.282040   3.388875    0.024318      1
+
+COPYPRIVATE 2187 time     = 3.307835 microseconds +/- 0.047664
+COPYPRIVATE 2187 overhead = 3.195468 microseconds +/- 0.048266
+
+--------------------------------------------------------
+Computing COPYIN 2187 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.706552   2.701317   2.722818    0.004555      1
+
+COPYIN 2187 time     = 2.706552 microseconds +/- 0.008929
+COPYIN 2187 overhead = 2.594185 microseconds +/- 0.009530
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-10.1/bin/../libexec/gcc/aarch64-unknown-linux-gnu/10.1.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ../configure --prefix=/opt/arm/gcc-10.1 --disable-multilib --enable-langagues=c,c++,fortran
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 (GCC) 

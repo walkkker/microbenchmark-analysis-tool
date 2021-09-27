@@ -1,0 +1,16 @@
+#!/bin/bash --login
+
+#SBATCH -p workq
+#SBATCH --time=00:30:00
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=1
+#SBATCH --cpus-per-task=64
+
+module load PrgEnv/gnu-9.2
+
+cd $SLURM_SUBMIT_DIR
+
+export OMP_NUM_THREADS=2
+
+srun --cpu-bind=cores ../syncbench
+gcc -v

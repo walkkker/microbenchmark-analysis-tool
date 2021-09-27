@@ -1,0 +1,145 @@
+Unloading /usr/local/share/epcc-module/epcc-module-loader
+
+Warning: Unloading the epcc-setup-env module will stop many
+modules being available on the system. If you do this by
+accident, you can recover the situation with the command:
+
+	module load /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+
+Unloading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Unloading bolt/0.7
+Loading bolt/0.7
+Loading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Loading /usr/local/share/epcc-module/epcc-module-loader
+
+Loading epcc-job-env
+  Loading requirement: bolt/0.7
+    /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Running OpenMP benchmark version 3.0
+	16 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	126 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.103283   0.101166   0.106915    0.001667      0
+
+reference time 1 time     = 0.103283 microseconds +/- 0.003267
+
+--------------------------------------------------------
+Computing PARALLEL time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                3.727294   3.662259   3.797907    0.044632      0
+
+PARALLEL time     = 3.727294 microseconds +/- 0.087479
+PARALLEL overhead = 3.624010 microseconds +/- 0.090746
+
+--------------------------------------------------------
+Computing FOR time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.716244   1.705912   1.731210    0.006626      0
+
+FOR time     = 1.716244 microseconds +/- 0.012987
+FOR overhead = 1.612961 microseconds +/- 0.016254
+
+--------------------------------------------------------
+Computing PARALLEL FOR time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                3.841259   3.774064   3.910781    0.043756      0
+
+PARALLEL FOR time     = 3.841259 microseconds +/- 0.085761
+PARALLEL FOR overhead = 3.737976 microseconds +/- 0.089028
+
+--------------------------------------------------------
+Computing BARRIER time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.920170   1.705575   5.815268    0.916832      1
+
+BARRIER time     = 1.920170 microseconds +/- 1.796992
+BARRIER overhead = 1.816887 microseconds +/- 1.800259
+
+--------------------------------------------------------
+Computing SINGLE time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.531252   2.493242   2.585520    0.030251      0
+
+SINGLE time     = 2.531252 microseconds +/- 0.059292
+SINGLE overhead = 2.427968 microseconds +/- 0.062559
+
+--------------------------------------------------------
+Computing CRITICAL time using 5120 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.405411   0.401845   0.420932    0.004055      1
+
+CRITICAL time     = 0.405411 microseconds +/- 0.007947
+CRITICAL overhead = 0.302128 microseconds +/- 0.011214
+
+--------------------------------------------------------
+Computing LOCK/UNLOCK time using 5120 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.403778   0.401240   0.407970    0.002093      0
+
+LOCK/UNLOCK time     = 0.403778 microseconds +/- 0.004102
+LOCK/UNLOCK overhead = 0.300495 microseconds +/- 0.007369
+
+--------------------------------------------------------
+Computing ORDERED time using 5120 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.423824   0.423030   0.424865    0.000584      0
+
+ORDERED time     = 0.423824 microseconds +/- 0.001145
+ORDERED overhead = 0.320540 microseconds +/- 0.004412
+
+--------------------------------------------------------
+Computing reference time 2 time using 2621440 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.000901   0.000884   0.000923    0.000014      0
+
+reference time 2 time     = 0.000901 microseconds +/- 0.000028
+
+--------------------------------------------------------
+Computing ATOMIC time using 163840 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.023912   0.022771   0.024634    0.000482      0
+
+ATOMIC time     = 0.023912 microseconds +/- 0.000945
+ATOMIC overhead = 0.023011 microseconds +/- 0.000973
+
+--------------------------------------------------------
+Computing reference time 3 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.103831   0.101668   0.106430    0.001524      0
+
+reference time 3 time     = 0.103831 microseconds +/- 0.002987
+
+--------------------------------------------------------
+Computing REDUCTION time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                3.967938   3.909982   4.028725    0.039471      0
+
+REDUCTION time     = 3.967938 microseconds +/- 0.077363
+REDUCTION overhead = 3.864107 microseconds +/- 0.080350
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/10.1.0/bin/../snos/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/gcc/10.1.0/snos/libexec/gcc/x86_64-suse-linux/10.1.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-10.1.0-202007190429.e9e165705b91a/configure --prefix=/opt/gcc/10.1.0/snos --disable-nls --libdir=/opt/gcc/10.1.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/10.1.0/snos/include/g++ --with-slibdir=/opt/gcc/10.1.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 20200507 (Cray Inc.) (GCC) 

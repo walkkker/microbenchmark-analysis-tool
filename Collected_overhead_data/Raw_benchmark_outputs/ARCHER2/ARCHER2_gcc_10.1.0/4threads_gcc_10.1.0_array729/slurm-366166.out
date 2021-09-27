@@ -1,0 +1,75 @@
+Unloading /usr/local/share/epcc-module/epcc-module-loader
+
+Warning: Unloading the epcc-setup-env module will stop many
+modules being available on the system. If you do this by
+accident, you can recover the situation with the command:
+
+	module load /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+
+Unloading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Unloading bolt/0.7
+Loading bolt/0.7
+Loading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Loading /usr/local/share/epcc-module/epcc-module-loader
+
+Loading epcc-job-env
+  Loading requirement: bolt/0.7
+    /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Running OpenMP benchmark version 3.0
+	4 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	114 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 40960 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.091669   0.090346   0.092909    0.000718      0
+
+reference time 1 time     = 0.091669 microseconds +/- 0.001408
+
+--------------------------------------------------------
+Computing PRIVATE 729 time using 5120 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.543808   0.528483   0.555758    0.008416      0
+
+PRIVATE 729 time     = 0.543808 microseconds +/- 0.016495
+PRIVATE 729 overhead = 0.452138 microseconds +/- 0.017903
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 729 time using 5120 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.632354   0.619347   0.644896    0.007418      0
+
+FIRSTPRIVATE 729 time     = 0.632354 microseconds +/- 0.014540
+FIRSTPRIVATE 729 overhead = 0.540685 microseconds +/- 0.015948
+
+--------------------------------------------------------
+Computing COPYPRIVATE 729 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.349849   1.343525   1.359098    0.004243      0
+
+COPYPRIVATE 729 time     = 1.349849 microseconds +/- 0.008317
+COPYPRIVATE 729 overhead = 1.258180 microseconds +/- 0.009725
+
+--------------------------------------------------------
+Computing COPYIN 729 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.854938   0.841164   0.868107    0.007580      0
+
+COPYIN 729 time     = 0.854938 microseconds +/- 0.014857
+COPYIN 729 overhead = 0.763269 microseconds +/- 0.016266
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/10.1.0/bin/../snos/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/gcc/10.1.0/snos/libexec/gcc/x86_64-suse-linux/10.1.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-10.1.0-202007190429.e9e165705b91a/configure --prefix=/opt/gcc/10.1.0/snos --disable-nls --libdir=/opt/gcc/10.1.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/10.1.0/snos/include/g++ --with-slibdir=/opt/gcc/10.1.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 20200507 (Cray Inc.) (GCC) 

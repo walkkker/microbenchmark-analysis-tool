@@ -1,0 +1,51 @@
+Running OpenMP benchmark version 3.0
+	32 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	490 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.245947   0.245706   0.246195    0.000167      0
+
+reference time 1 time     = 0.245947 microseconds +/- 0.000327
+
+--------------------------------------------------------
+Computing PRIVATE 6561 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.103476   2.096780   2.110936    0.003964      0
+
+PRIVATE 6561 time     = 2.103476 microseconds +/- 0.007769
+PRIVATE 6561 overhead = 1.857529 microseconds +/- 0.008096
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 6561 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                6.098524   6.083027   6.148219    0.015058      1
+
+FIRSTPRIVATE 6561 time     = 6.098524 microseconds +/- 0.029513
+FIRSTPRIVATE 6561 overhead = 5.852577 microseconds +/- 0.029841
+
+--------------------------------------------------------
+Computing COPYPRIVATE 6561 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                11.837520   11.621416   12.072176    0.121395      0
+
+COPYPRIVATE 6561 time     = 11.837520 microseconds +/- 0.237935
+COPYPRIVATE 6561 overhead = 11.591573 microseconds +/- 0.238262
+
+--------------------------------------------------------
+Computing COPYIN 6561 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                7.790327   7.605553   8.451939    0.213195      1
+
+COPYIN 6561 time     = 7.790327 microseconds +/- 0.417863
+COPYIN 6561 overhead = 7.544380 microseconds +/- 0.418190
+icc version 19.0.0.117 (gcc version 6.3.0 compatibility)

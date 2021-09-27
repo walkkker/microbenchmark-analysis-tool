@@ -1,0 +1,51 @@
+Running OpenMP benchmark version 3.0
+	8 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	540 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.243236   0.242074   0.245986    0.000929      0
+
+reference time 1 time     = 0.243236 microseconds +/- 0.001820
+
+--------------------------------------------------------
+Computing PRIVATE 3 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.304001   1.298822   1.309440    0.002379      0
+
+PRIVATE 3 time     = 1.304001 microseconds +/- 0.004664
+PRIVATE 3 overhead = 1.060765 microseconds +/- 0.006484
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 3 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.300485   1.297984   1.304690    0.001613      0
+
+FIRSTPRIVATE 3 time     = 1.300485 microseconds +/- 0.003162
+FIRSTPRIVATE 3 overhead = 1.057249 microseconds +/- 0.004982
+
+--------------------------------------------------------
+Computing COPYPRIVATE 3 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.641371   2.617203   2.648495    0.006389      1
+
+COPYPRIVATE 3 time     = 2.641371 microseconds +/- 0.012522
+COPYPRIVATE 3 overhead = 2.398135 microseconds +/- 0.014343
+
+--------------------------------------------------------
+Computing COPYIN 3 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.064565   2.058595   2.069585    0.003412      0
+
+COPYIN 3 time     = 2.064565 microseconds +/- 0.006687
+COPYIN 3 overhead = 1.821329 microseconds +/- 0.008508
+icc version 19.0.0.117 (gcc version 6.3.0 compatibility)

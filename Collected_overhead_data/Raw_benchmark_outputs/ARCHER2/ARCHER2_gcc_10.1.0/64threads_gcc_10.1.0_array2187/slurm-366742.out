@@ -1,0 +1,75 @@
+Unloading /usr/local/share/epcc-module/epcc-module-loader
+
+Warning: Unloading the epcc-setup-env module will stop many
+modules being available on the system. If you do this by
+accident, you can recover the situation with the command:
+
+	module load /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+
+Unloading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Unloading bolt/0.7
+Loading bolt/0.7
+Loading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Loading /usr/local/share/epcc-module/epcc-module-loader
+
+Loading epcc-job-env
+  Loading requirement: bolt/0.7
+    /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Running OpenMP benchmark version 3.0
+	64 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	114 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.094577   0.091840   0.100803    0.002941      0
+
+reference time 1 time     = 0.094577 microseconds +/- 0.005765
+
+--------------------------------------------------------
+Computing PRIVATE 2187 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                11.361790   11.076751   13.434750    0.521645      1
+
+PRIVATE 2187 time     = 11.361790 microseconds +/- 1.022423
+PRIVATE 2187 overhead = 11.267213 microseconds +/- 1.028188
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 2187 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                12.848447   12.784141   13.445225    0.142960      1
+
+FIRSTPRIVATE 2187 time     = 12.848447 microseconds +/- 0.280201
+FIRSTPRIVATE 2187 overhead = 12.753870 microseconds +/- 0.285967
+
+--------------------------------------------------------
+Computing COPYPRIVATE 2187 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                25.791677   25.582813   26.076387    0.141918      0
+
+COPYPRIVATE 2187 time     = 25.791677 microseconds +/- 0.278159
+COPYPRIVATE 2187 overhead = 25.697099 microseconds +/- 0.283924
+
+--------------------------------------------------------
+Computing COPYIN 2187 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                16.121388   16.055100   16.225806    0.047265      0
+
+COPYIN 2187 time     = 16.121388 microseconds +/- 0.092640
+COPYIN 2187 overhead = 16.026811 microseconds +/- 0.098405
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/10.1.0/bin/../snos/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/gcc/10.1.0/snos/libexec/gcc/x86_64-suse-linux/10.1.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-10.1.0-202007190429.e9e165705b91a/configure --prefix=/opt/gcc/10.1.0/snos --disable-nls --libdir=/opt/gcc/10.1.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/10.1.0/snos/include/g++ --with-slibdir=/opt/gcc/10.1.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 20200507 (Cray Inc.) (GCC) 

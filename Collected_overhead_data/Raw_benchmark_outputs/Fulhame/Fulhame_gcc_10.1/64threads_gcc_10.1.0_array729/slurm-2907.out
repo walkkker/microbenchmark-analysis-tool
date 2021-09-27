@@ -1,0 +1,58 @@
+Running OpenMP benchmark version 3.0
+	64 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	62 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.112180   0.111482   0.113087    0.000389      0
+
+reference time 1 time     = 0.112180 microseconds +/- 0.000763
+
+--------------------------------------------------------
+Computing PRIVATE 729 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1329.011663   1089.399075   1498.576207    111.006342      0
+
+PRIVATE 729 time     = 1329.011663 microseconds +/- 217.572431
+PRIVATE 729 overhead = 1328.899483 microseconds +/- 217.573194
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 729 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1349.767202   1119.068870   1432.215935    87.164395      0
+
+FIRSTPRIVATE 729 time     = 1349.767202 microseconds +/- 170.842215
+FIRSTPRIVATE 729 overhead = 1349.655022 microseconds +/- 170.842978
+
+--------------------------------------------------------
+Computing COPYPRIVATE 729 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                839.491892   24.412246   2786.529390    1056.999182      0
+
+COPYPRIVATE 729 time     = 839.491892 microseconds +/- 2071.718397
+COPYPRIVATE 729 overhead = 839.379712 microseconds +/- 2071.719160
+
+--------------------------------------------------------
+Computing COPYIN 729 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                13.426510   13.048155   16.792910    0.891098      1
+
+COPYIN 729 time     = 13.426510 microseconds +/- 1.746552
+COPYIN 729 overhead = 13.314330 microseconds +/- 1.747316
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-10.1/bin/../libexec/gcc/aarch64-unknown-linux-gnu/10.1.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ../configure --prefix=/opt/arm/gcc-10.1 --disable-multilib --enable-langagues=c,c++,fortran
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 (GCC) 

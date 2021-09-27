@@ -1,0 +1,57 @@
+Running OpenMP benchmark version 3.0
+	64 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	50 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.109937   0.107725   0.114779    0.001475      1
+
+reference time 1 time     = 0.109937 microseconds +/- 0.002891
+
+--------------------------------------------------------
+Computing PRIVATE 81 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1183.639222   744.746253   1413.278515    184.769324      0
+
+PRIVATE 81 time     = 1183.639222 microseconds +/- 362.147875
+PRIVATE 81 overhead = 1183.529285 microseconds +/- 362.150766
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 81 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1301.985222   788.661046   1444.411976    180.953143      0
+
+FIRSTPRIVATE 81 time     = 1301.985222 microseconds +/- 354.668160
+FIRSTPRIVATE 81 overhead = 1301.875286 microseconds +/- 354.671051
+
+--------------------------------------------------------
+Computing COPYPRIVATE 81 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2214.194874   176.196592   2857.825207    804.987288      0
+
+COPYPRIVATE 81 time     = 2214.194874 microseconds +/- 1577.775085
+COPYPRIVATE 81 overhead = 2214.084937 microseconds +/- 1577.777976
+
+--------------------------------------------------------
+Computing COPYIN 81 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                130.036864   128.641026   133.000314    1.042744      0
+
+COPYIN 81 time     = 130.036864 microseconds +/- 2.043779
+COPYIN 81 overhead = 129.926928 microseconds +/- 2.046670
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux/bin/../libexec/gcc/aarch64-linux/9.2.0/lto-wrapper
+Target: aarch64-linux
+Configured with: ../configure --prefix /tmp/plgbuild/abs_build/822059_27751/trunk/rel_work/arm_builder/components/builder/work/current_tree/AArch64/opt/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux --enable-languages=c,c++,go,fortran --disable-multilib --enable-lto --disable-werror --enable-stage1-checking --enable-checking=release --with-build-config=bootstrap-debug --enable-plugins --enable-gnu-indirect-function --target aarch64-linux --host aarch64-linux --with-build-sysroot=/tmp/plgbuild/abs_build/822059_27751/trunk/rel_work/arm_builder/components/builder/roots/armada/SysRoots/SUSE/SUSE_12_aarch64.rootfs --with-pkgversion=ARM-build-3
+Thread model: posix
+gcc version 9.2.0 (ARM-build-3) 

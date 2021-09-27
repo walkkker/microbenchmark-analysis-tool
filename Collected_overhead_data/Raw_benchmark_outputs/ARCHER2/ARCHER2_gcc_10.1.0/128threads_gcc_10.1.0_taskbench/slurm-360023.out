@@ -1,0 +1,137 @@
+Unloading /usr/local/share/epcc-module/epcc-module-loader
+
+Warning: Unloading the epcc-setup-env module will stop many
+modules being available on the system. If you do this by
+accident, you can recover the situation with the command:
+
+	module load /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+
+Unloading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Unloading bolt/0.7
+Loading bolt/0.7
+Loading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Loading /usr/local/share/epcc-module/epcc-module-loader
+
+Loading epcc-job-env
+  Loading requirement: bolt/0.7
+    /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Running OpenMP benchmark version 3.0
+	128 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	114 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.094655   0.091124   0.102358    0.003950      0
+
+reference time 1 time     = 0.094655 microseconds +/- 0.007742
+
+--------------------------------------------------------
+Computing PARALLEL TASK time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                430.708978   353.264692   994.517352    142.155787      1
+
+PARALLEL TASK time     = 430.708978 microseconds +/- 278.625342
+PARALLEL TASK overhead = 430.614323 microseconds +/- 278.633084
+
+--------------------------------------------------------
+Computing MASTER TASK time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                413.075394   158.233964   896.148337    205.551973      0
+
+MASTER TASK time     = 413.075394 microseconds +/- 402.881867
+MASTER TASK overhead = 412.980739 microseconds +/- 402.889609
+
+--------------------------------------------------------
+Computing MASTER TASK BUSY SLAVES time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                3.759993   1.198259   10.826436    2.721665      0
+
+MASTER TASK BUSY SLAVES time     = 3.759993 microseconds +/- 5.334463
+MASTER TASK BUSY SLAVES overhead = 3.665338 microseconds +/- 5.342205
+
+--------------------------------------------------------
+Computing CONDITIONAL TASK time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.163169   0.150840   0.261823    0.023345      1
+
+CONDITIONAL TASK time     = 0.163169 microseconds +/- 0.045756
+CONDITIONAL TASK overhead = 0.068514 microseconds +/- 0.053498
+
+--------------------------------------------------------
+Computing TASK WAIT time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                726.317851   669.173570   763.026462    24.307620      0
+
+TASK WAIT time     = 726.317851 microseconds +/- 47.642934
+TASK WAIT overhead = 726.223196 microseconds +/- 47.650676
+
+--------------------------------------------------------
+Computing TASK BARRIER time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                923.719719   874.043652   948.738935    20.153248      0
+
+TASK BARRIER time     = 923.719719 microseconds +/- 39.500366
+TASK BARRIER overhead = 923.625064 microseconds +/- 39.508108
+
+--------------------------------------------------------
+Computing NESTED TASK time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                213.865740   196.433208   225.875864    6.144844      0
+
+NESTED TASK time     = 213.865740 microseconds +/- 12.043893
+NESTED TASK overhead = 213.771085 microseconds +/- 12.051635
+
+--------------------------------------------------------
+Computing NESTED MASTER TASK time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                552.792675   386.257749   660.936302    76.475727      0
+
+NESTED MASTER TASK time     = 552.792675 microseconds +/- 149.892424
+NESTED MASTER TASK overhead = 552.698020 microseconds +/- 149.900167
+
+--------------------------------------------------------
+Computing reference time 2 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.092253   0.090432   0.100075    0.002270      1
+
+reference time 2 time     = 0.092253 microseconds +/- 0.004450
+
+--------------------------------------------------------
+Computing BRANCH TASK TREE time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                164.331959   156.357719   169.517094    3.971969      0
+
+BRANCH TASK TREE time     = 164.331959 microseconds +/- 7.785059
+BRANCH TASK TREE overhead = 164.239706 microseconds +/- 7.789509
+
+--------------------------------------------------------
+Computing LEAF TASK TREE time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                161.363435   151.878825   169.155467    3.919015      0
+
+LEAF TASK TREE time     = 161.363435 microseconds +/- 7.681269
+LEAF TASK TREE overhead = 161.271182 microseconds +/- 7.685719
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/10.1.0/bin/../snos/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/gcc/10.1.0/snos/libexec/gcc/x86_64-suse-linux/10.1.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-10.1.0-202007190429.e9e165705b91a/configure --prefix=/opt/gcc/10.1.0/snos --disable-nls --libdir=/opt/gcc/10.1.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/10.1.0/snos/include/g++ --with-slibdir=/opt/gcc/10.1.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 20200507 (Cray Inc.) (GCC) 

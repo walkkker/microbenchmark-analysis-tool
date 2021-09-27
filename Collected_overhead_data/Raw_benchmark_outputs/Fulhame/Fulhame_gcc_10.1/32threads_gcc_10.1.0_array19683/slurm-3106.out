@@ -1,0 +1,58 @@
+Running OpenMP benchmark version 3.0
+	32 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	50 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.106423   0.106200   0.107006    0.000212      0
+
+reference time 1 time     = 0.106423 microseconds +/- 0.000416
+
+--------------------------------------------------------
+Computing PRIVATE 19683 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                448.486153   4.943227   937.231770    414.018020      0
+
+PRIVATE 19683 time     = 448.486153 microseconds +/- 811.475320
+PRIVATE 19683 overhead = 448.379730 microseconds +/- 811.475736
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 19683 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                15.179460   15.025720   15.300349    0.079533      0
+
+FIRSTPRIVATE 19683 time     = 15.179460 microseconds +/- 0.155884
+FIRSTPRIVATE 19683 overhead = 15.073037 microseconds +/- 0.156300
+
+--------------------------------------------------------
+Computing COPYPRIVATE 19683 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                44.581113   42.099261   46.063575    1.010243      0
+
+COPYPRIVATE 19683 time     = 44.581113 microseconds +/- 1.980076
+COPYPRIVATE 19683 overhead = 44.474690 microseconds +/- 1.980491
+
+--------------------------------------------------------
+Computing COPYIN 19683 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                41.117585   40.724140   44.080568    0.707837      1
+
+COPYIN 19683 time     = 41.117585 microseconds +/- 1.387361
+COPYIN 19683 overhead = 41.011163 microseconds +/- 1.387777
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-10.1/bin/../libexec/gcc/aarch64-unknown-linux-gnu/10.1.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ../configure --prefix=/opt/arm/gcc-10.1 --disable-multilib --enable-langagues=c,c++,fortran
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 (GCC) 

@@ -1,0 +1,2 @@
+# SQL script and CSV file exported from the database
+common_benchmark.csv is a CSV file exported from the database table and common_benchmark.sql is a SQL script exported from the database table. If you want to see all the data directly, you can use one of these two files. You can also import one of the files directly into the database (by Navicat or other tools) after you have created it using Django.

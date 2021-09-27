@@ -1,0 +1,17 @@
+#!/bin/bash --login
+
+#SBATCH -p workq
+#SBATCH --time=00:30:00
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=1
+#SBATCH --cpus-per-task=64
+
+module unload PrgEnv/arm-20.0
+module load PrgEnv/gnu-10.1/openmpi-4.0.2
+
+cd $SLURM_SUBMIT_DIR
+
+export OMP_NUM_THREADS=64
+
+srun --cpu-bind=cores ../arraybench_243
+gcc -v

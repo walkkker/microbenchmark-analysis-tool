@@ -1,0 +1,51 @@
+Running OpenMP benchmark version 3.0
+	4 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	540 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.243500   0.242190   0.245217    0.001006      0
+
+reference time 1 time     = 0.243500 microseconds +/- 0.001971
+
+--------------------------------------------------------
+Computing PRIVATE 81 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.972808   0.963639   0.976957    0.003623      0
+
+PRIVATE 81 time     = 0.972808 microseconds +/- 0.007100
+PRIVATE 81 overhead = 0.729308 microseconds +/- 0.009071
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 81 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.990625   0.983197   0.996795    0.004327      0
+
+FIRSTPRIVATE 81 time     = 0.990625 microseconds +/- 0.008482
+FIRSTPRIVATE 81 overhead = 0.747124 microseconds +/- 0.010453
+
+--------------------------------------------------------
+Computing COPYPRIVATE 81 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.133437   1.954660   4.102290    0.541545      1
+
+COPYPRIVATE 81 time     = 2.133437 microseconds +/- 1.061428
+COPYPRIVATE 81 overhead = 1.889936 microseconds +/- 1.063400
+
+--------------------------------------------------------
+Computing COPYIN 81 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.600588   2.585910   2.612546    0.009808      0
+
+COPYIN 81 time     = 2.600588 microseconds +/- 0.019223
+COPYIN 81 overhead = 2.357088 microseconds +/- 0.021194
+icc version 19.0.0.117 (gcc version 6.3.0 compatibility)

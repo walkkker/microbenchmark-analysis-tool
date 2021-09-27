@@ -1,0 +1,59 @@
+Running OpenMP benchmark version 3.0
+	16 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	50 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.103762   0.103656   0.104099    0.000146      0
+
+reference time 1 time     = 0.103762 microseconds +/- 0.000285
+
+--------------------------------------------------------
+Computing PRIVATE 6561 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                24.183691   19.112229   31.200051    5.778903      0
+
+PRIVATE 6561 time     = 24.183691 microseconds +/- 11.326649
+PRIVATE 6561 overhead = 24.079928 microseconds +/- 11.326935
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 6561 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                15.401244   6.800890   27.114153    9.997826      0
+
+FIRSTPRIVATE 6561 time     = 15.401244 microseconds +/- 19.595738
+FIRSTPRIVATE 6561 overhead = 15.297482 microseconds +/- 19.596023
+
+--------------------------------------------------------
+Computing COPYPRIVATE 6561 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                10.926090   10.877848   11.146814    0.070163      1
+
+COPYPRIVATE 6561 time     = 10.926090 microseconds +/- 0.137519
+COPYPRIVATE 6561 overhead = 10.822328 microseconds +/- 0.137804
+
+--------------------------------------------------------
+Computing COPYIN 6561 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                8.534379   8.486956   8.768588    0.068426      1
+
+COPYIN 6561 time     = 8.534379 microseconds +/- 0.134114
+COPYIN 6561 overhead = 8.430617 microseconds +/- 0.134399
+Arm C/C++/Fortran Compiler version 20.0 (build number 51) (based on LLVM 9.0.1)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/arm/arm-linux-compiler-20.0_Generic-AArch64_SUSE-12_aarch64-linux/bin
+Found candidate GCC installation: /opt/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux/lib/gcc/aarch64-linux-gnu/9.2.0
+Found candidate GCC installation: /usr/lib64/gcc/aarch64-suse-linux/7
+Selected GCC installation: /opt/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux/lib/gcc/aarch64-linux-gnu/9.2.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64

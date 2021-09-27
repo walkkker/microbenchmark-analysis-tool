@@ -1,0 +1,51 @@
+Running OpenMP benchmark version 3.0
+	32 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	445 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.218975   0.218768   0.219326    0.000152      0
+
+reference time 1 time     = 0.218975 microseconds +/- 0.000297
+
+--------------------------------------------------------
+Computing PRIVATE 6561 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                15.088469   15.006959   15.161932    0.043753      0
+
+PRIVATE 6561 time     = 15.088469 microseconds +/- 0.085755
+PRIVATE 6561 overhead = 14.869494 microseconds +/- 0.086052
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 6561 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                6.001219   5.987287   6.049871    0.014376      1
+
+FIRSTPRIVATE 6561 time     = 6.001219 microseconds +/- 0.028178
+FIRSTPRIVATE 6561 overhead = 5.782244 microseconds +/- 0.028475
+
+--------------------------------------------------------
+Computing COPYPRIVATE 6561 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                11.985637   11.856109   12.090802    0.060358      0
+
+COPYPRIVATE 6561 time     = 11.985637 microseconds +/- 0.118301
+COPYPRIVATE 6561 overhead = 11.766662 microseconds +/- 0.118599
+
+--------------------------------------------------------
+Computing COPYIN 6561 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                7.642508   7.498264   8.344650    0.214259      1
+
+COPYIN 6561 time     = 7.642508 microseconds +/- 0.419948
+COPYIN 6561 overhead = 7.423533 microseconds +/- 0.420245
+icc version 18.0.5 (gcc version 6.3.0 compatibility)

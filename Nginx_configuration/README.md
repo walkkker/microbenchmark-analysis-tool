@@ -1,0 +1,2 @@
+# Nginx configuration
+The README in "../Web_application_benchmark_analysis_tool" has illustrated when using Nginx. This folder contains 1 file - nginx.conf, which is an Nginx configuration applied in our web application http://www.openmpbench.xyz/. You can regard it as an configuration example if you want to put the web application into production environment.

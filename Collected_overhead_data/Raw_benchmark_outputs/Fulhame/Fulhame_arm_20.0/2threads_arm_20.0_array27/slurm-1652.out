@@ -1,0 +1,59 @@
+Running OpenMP benchmark version 3.0
+	2 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	50 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.112701   0.104692   0.113866    0.002667      1
+
+reference time 1 time     = 0.112701 microseconds +/- 0.005227
+
+--------------------------------------------------------
+Computing PRIVATE 27 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.345975   1.339428   1.365226    0.005537      1
+
+PRIVATE 27 time     = 1.345975 microseconds +/- 0.010853
+PRIVATE 27 overhead = 1.233274 microseconds +/- 0.016081
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 27 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.364294   1.337938   1.383573    0.020763      0
+
+FIRSTPRIVATE 27 time     = 1.364294 microseconds +/- 0.040695
+FIRSTPRIVATE 27 overhead = 1.251593 microseconds +/- 0.045922
+
+--------------------------------------------------------
+Computing COPYPRIVATE 27 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.901452   2.403744   5.428307    1.101108      0
+
+COPYPRIVATE 27 time     = 2.901452 microseconds +/- 2.158172
+COPYPRIVATE 27 overhead = 2.788751 microseconds +/- 2.163399
+
+--------------------------------------------------------
+Computing COPYIN 27 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                3.655627   3.643706   3.674999    0.012199      0
+
+COPYIN 27 time     = 3.655627 microseconds +/- 0.023910
+COPYIN 27 overhead = 3.542926 microseconds +/- 0.029137
+Arm C/C++/Fortran Compiler version 20.0 (build number 51) (based on LLVM 9.0.1)
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/arm/arm-linux-compiler-20.0_Generic-AArch64_SUSE-12_aarch64-linux/bin
+Found candidate GCC installation: /opt/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux/lib/gcc/aarch64-linux-gnu/9.2.0
+Found candidate GCC installation: /usr/lib64/gcc/aarch64-suse-linux/7
+Selected GCC installation: /opt/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux/lib/gcc/aarch64-linux-gnu/9.2.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64

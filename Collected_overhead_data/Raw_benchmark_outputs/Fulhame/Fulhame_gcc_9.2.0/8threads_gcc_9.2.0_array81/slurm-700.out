@@ -1,0 +1,57 @@
+Running OpenMP benchmark version 3.0
+	8 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	50 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.109630   0.108431   0.111118    0.000721      0
+
+reference time 1 time     = 0.109630 microseconds +/- 0.001412
+
+--------------------------------------------------------
+Computing PRIVATE 81 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                354.508613   4.313514   717.352470    350.813140      0
+
+PRIVATE 81 time     = 354.508613 microseconds +/- 687.593754
+PRIVATE 81 overhead = 354.398984 microseconds +/- 687.595166
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 81 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                4.575128   4.543853   4.614517    0.017624      0
+
+FIRSTPRIVATE 81 time     = 4.575128 microseconds +/- 0.034542
+FIRSTPRIVATE 81 overhead = 4.465499 microseconds +/- 0.035954
+
+--------------------------------------------------------
+Computing COPYPRIVATE 81 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                9.845435   9.792391   9.908021    0.032973      0
+
+COPYPRIVATE 81 time     = 9.845435 microseconds +/- 0.064627
+COPYPRIVATE 81 overhead = 9.735805 microseconds +/- 0.066039
+
+--------------------------------------------------------
+Computing COPYIN 81 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                6.752481   6.715363   6.906348    0.041840      1
+
+COPYIN 81 time     = 6.752481 microseconds +/- 0.082006
+COPYIN 81 overhead = 6.642851 microseconds +/- 0.083418
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux/bin/../libexec/gcc/aarch64-linux/9.2.0/lto-wrapper
+Target: aarch64-linux
+Configured with: ../configure --prefix /tmp/plgbuild/abs_build/822059_27751/trunk/rel_work/arm_builder/components/builder/work/current_tree/AArch64/opt/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux --enable-languages=c,c++,go,fortran --disable-multilib --enable-lto --disable-werror --enable-stage1-checking --enable-checking=release --with-build-config=bootstrap-debug --enable-plugins --enable-gnu-indirect-function --target aarch64-linux --host aarch64-linux --with-build-sysroot=/tmp/plgbuild/abs_build/822059_27751/trunk/rel_work/arm_builder/components/builder/roots/armada/SysRoots/SUSE/SUSE_12_aarch64.rootfs --with-pkgversion=ARM-build-3
+Thread model: posix
+gcc version 9.2.0 (ARM-build-3) 

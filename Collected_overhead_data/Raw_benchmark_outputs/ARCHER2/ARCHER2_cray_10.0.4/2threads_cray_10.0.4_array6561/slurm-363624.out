@@ -1,0 +1,75 @@
+Unloading /usr/local/share/epcc-module/epcc-module-loader
+
+Warning: Unloading the epcc-setup-env module will stop many
+modules being available on the system. If you do this by
+accident, you can recover the situation with the command:
+
+	module load /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+
+Unloading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Unloading bolt/0.7
+Loading bolt/0.7
+Loading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Loading /usr/local/share/epcc-module/epcc-module-loader
+
+Loading epcc-job-env
+  Loading requirement: bolt/0.7
+    /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Running OpenMP benchmark version 3.0
+	2 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	139 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.106641   0.105755   0.110154    0.001222      0
+
+reference time 1 time     = 0.106641 microseconds +/- 0.002394
+
+--------------------------------------------------------
+Computing PRIVATE 6561 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.992251   0.988764   0.995292    0.001934      0
+
+PRIVATE 6561 time     = 0.992251 microseconds +/- 0.003791
+PRIVATE 6561 overhead = 0.885610 microseconds +/- 0.006185
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 6561 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.245641   2.146202   2.272325    0.026400      1
+
+FIRSTPRIVATE 6561 time     = 2.245641 microseconds +/- 0.051744
+FIRSTPRIVATE 6561 overhead = 2.139001 microseconds +/- 0.054139
+
+--------------------------------------------------------
+Computing COPYPRIVATE 6561 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                3.062541   2.915379   3.139212    0.067838      0
+
+COPYPRIVATE 6561 time     = 3.062541 microseconds +/- 0.132963
+COPYPRIVATE 6561 overhead = 2.955900 microseconds +/- 0.135357
+
+--------------------------------------------------------
+Computing COPYIN 6561 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.538102   2.523922   2.581038    0.015539      0
+
+COPYIN 6561 time     = 2.538102 microseconds +/- 0.030456
+COPYIN 6561 overhead = 2.431461 microseconds +/- 0.032850
+Cray clang version 10.0.4 (ffb772459f6195ccd74395703e557b253fc8ee27)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/cray/pe/cce/10.0.4/cce-clang/x86_64/share/../bin
+Found candidate GCC installation: /opt/gcc/8.1.0/snos/lib/gcc/x86_64-suse-linux/8.1.0
+Selected GCC installation: /opt/gcc/8.1.0/snos/lib/gcc/x86_64-suse-linux/8.1.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64

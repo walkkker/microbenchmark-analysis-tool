@@ -1,0 +1,58 @@
+Running OpenMP benchmark version 3.0
+	16 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	62 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.112297   0.111907   0.112821    0.000278      0
+
+reference time 1 time     = 0.112297 microseconds +/- 0.000544
+
+--------------------------------------------------------
+Computing PRIVATE 729 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.179008   2.108980   2.707727    0.131986      1
+
+PRIVATE 729 time     = 2.179008 microseconds +/- 0.258692
+PRIVATE 729 overhead = 2.066711 microseconds +/- 0.259236
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 729 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.444489   2.427950   2.474571    0.011115      0
+
+FIRSTPRIVATE 729 time     = 2.444489 microseconds +/- 0.021785
+FIRSTPRIVATE 729 overhead = 2.332192 microseconds +/- 0.022330
+
+--------------------------------------------------------
+Computing COPYPRIVATE 729 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                6.301539   6.152628   7.505409    0.288696      1
+
+COPYPRIVATE 729 time     = 6.301539 microseconds +/- 0.565844
+COPYPRIVATE 729 overhead = 6.189242 microseconds +/- 0.566389
+
+--------------------------------------------------------
+Computing COPYIN 729 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                3.232928   3.216916   3.254222    0.011292      0
+
+COPYIN 729 time     = 3.232928 microseconds +/- 0.022132
+COPYIN 729 overhead = 3.120631 microseconds +/- 0.022676
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-10.1/bin/../libexec/gcc/aarch64-unknown-linux-gnu/10.1.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ../configure --prefix=/opt/arm/gcc-10.1 --disable-multilib --enable-langagues=c,c++,fortran
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 (GCC) 

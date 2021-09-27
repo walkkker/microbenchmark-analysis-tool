@@ -1,0 +1,75 @@
+Unloading /usr/local/share/epcc-module/epcc-module-loader
+
+Warning: Unloading the epcc-setup-env module will stop many
+modules being available on the system. If you do this by
+accident, you can recover the situation with the command:
+
+	module load /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+
+Unloading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Unloading bolt/0.7
+Loading bolt/0.7
+Loading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Loading /usr/local/share/epcc-module/epcc-module-loader
+
+Loading epcc-job-env
+  Loading requirement: bolt/0.7
+    /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Running OpenMP benchmark version 3.0
+	1 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	84 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 40960 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.058594   0.057323   0.059622    0.000861      0
+
+reference time 1 time     = 0.058594 microseconds +/- 0.001688
+
+--------------------------------------------------------
+Computing PRIVATE 3 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.172915   0.171189   0.175787    0.001779      0
+
+PRIVATE 3 time     = 0.172915 microseconds +/- 0.003486
+PRIVATE 3 overhead = 0.114321 microseconds +/- 0.005174
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 3 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.171006   0.170316   0.172609    0.000631      0
+
+FIRSTPRIVATE 3 time     = 0.171006 microseconds +/- 0.001236
+FIRSTPRIVATE 3 overhead = 0.112412 microseconds +/- 0.002924
+
+--------------------------------------------------------
+Computing COPYPRIVATE 3 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.210151   0.209361   0.213878    0.001245      0
+
+COPYPRIVATE 3 time     = 0.210151 microseconds +/- 0.002441
+COPYPRIVATE 3 overhead = 0.151557 microseconds +/- 0.004129
+
+--------------------------------------------------------
+Computing COPYIN 3 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.194886   0.192237   0.198092    0.001748      0
+
+COPYIN 3 time     = 0.194886 microseconds +/- 0.003427
+COPYIN 3 overhead = 0.136292 microseconds +/- 0.005115
+AOCC.LLVM.2.1.0.B1030.2019_11_12 clang version 9.0.0 (CLANG: Build#1030) (based on LLVM AOCC.LLVM.2.1.0.B1030.2019_11_12)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/AMD/aocc-compiler-2.1.0/bin
+Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/7
+Selected GCC installation: /usr/lib64/gcc/x86_64-suse-linux/7
+Candidate multilib: .;@m64
+Selected multilib: .;@m64

@@ -1,0 +1,137 @@
+Unloading /usr/local/share/epcc-module/epcc-module-loader
+
+Warning: Unloading the epcc-setup-env module will stop many
+modules being available on the system. If you do this by
+accident, you can recover the situation with the command:
+
+	module load /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+
+Unloading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Unloading bolt/0.7
+Loading bolt/0.7
+Loading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Loading /usr/local/share/epcc-module/epcc-module-loader
+
+Loading epcc-job-env
+  Loading requirement: bolt/0.7
+    /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Running OpenMP benchmark version 3.0
+	16 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	114 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.094737   0.090442   0.102203    0.004656      0
+
+reference time 1 time     = 0.094737 microseconds +/- 0.009126
+
+--------------------------------------------------------
+Computing PARALLEL TASK time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                95.853573   17.099222   705.261342    202.184477      1
+
+PARALLEL TASK time     = 95.853573 microseconds +/- 396.281574
+PARALLEL TASK overhead = 95.758835 microseconds +/- 396.290700
+
+--------------------------------------------------------
+Computing MASTER TASK time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                15.897485   13.710768   18.976734    1.853446      0
+
+MASTER TASK time     = 15.897485 microseconds +/- 3.632754
+MASTER TASK overhead = 15.802748 microseconds +/- 3.641879
+
+--------------------------------------------------------
+Computing MASTER TASK BUSY SLAVES time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.992674   0.840849   1.308702    0.110412      0
+
+MASTER TASK BUSY SLAVES time     = 0.992674 microseconds +/- 0.216408
+MASTER TASK BUSY SLAVES overhead = 0.897936 microseconds +/- 0.225533
+
+--------------------------------------------------------
+Computing CONDITIONAL TASK time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.133954   0.132773   0.136143    0.000914      0
+
+CONDITIONAL TASK time     = 0.133954 microseconds +/- 0.001792
+CONDITIONAL TASK overhead = 0.039217 microseconds +/- 0.010917
+
+--------------------------------------------------------
+Computing TASK WAIT time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                19.343403   18.895580   19.666180    0.214391      0
+
+TASK WAIT time     = 19.343403 microseconds +/- 0.420206
+TASK WAIT overhead = 19.248666 microseconds +/- 0.429332
+
+--------------------------------------------------------
+Computing TASK BARRIER time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                25.273134   24.782738   25.732419    0.260950      0
+
+TASK BARRIER time     = 25.273134 microseconds +/- 0.511463
+TASK BARRIER overhead = 25.178396 microseconds +/- 0.520589
+
+--------------------------------------------------------
+Computing NESTED TASK time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                13.908250   13.506191   14.264829    0.211971      0
+
+NESTED TASK time     = 13.908250 microseconds +/- 0.415463
+NESTED TASK overhead = 13.813512 microseconds +/- 0.424588
+
+--------------------------------------------------------
+Computing NESTED MASTER TASK time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                13.853411   13.675698   14.121056    0.135317      0
+
+NESTED MASTER TASK time     = 13.853411 microseconds +/- 0.265221
+NESTED MASTER TASK overhead = 13.758674 microseconds +/- 0.274347
+
+--------------------------------------------------------
+Computing reference time 2 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.093565   0.090677   0.100356    0.002365      0
+
+reference time 2 time     = 0.093565 microseconds +/- 0.004636
+
+--------------------------------------------------------
+Computing BRANCH TASK TREE time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                10.817347   9.962462   12.119784    0.492973      0
+
+BRANCH TASK TREE time     = 10.817347 microseconds +/- 0.966227
+BRANCH TASK TREE overhead = 10.723782 microseconds +/- 0.970863
+
+--------------------------------------------------------
+Computing LEAF TASK TREE time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                9.916787   9.444752   10.685067    0.380423      0
+
+LEAF TASK TREE time     = 9.916787 microseconds +/- 0.745629
+LEAF TASK TREE overhead = 9.823222 microseconds +/- 0.750265
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/10.1.0/bin/../snos/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/gcc/10.1.0/snos/libexec/gcc/x86_64-suse-linux/10.1.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-10.1.0-202007190429.e9e165705b91a/configure --prefix=/opt/gcc/10.1.0/snos --disable-nls --libdir=/opt/gcc/10.1.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/10.1.0/snos/include/g++ --with-slibdir=/opt/gcc/10.1.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 20200507 (Cray Inc.) (GCC) 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+    <link type="text/css" rel="stylesheet" href="css/css_base.css">
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/chunksize_version.js"></script>
+    <script type="text/javascript" src="js/js_base.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>openmpbench</title>
+</head>
+<body>
+    <div class="title">
+            <h1>EPCC OpenMP Microbenchmark Suite Analysis tool (Chunksize Version)</h1>
+    </div>
+    <div class="navigation">
+        <div class="dropdown">
+            <a href="index.html" class="dropdownbtn">Home page</a>
+            <div class="dropdown_content" style="width: 432px">
+                <a href="index.html">Use number of threads as X-axis for all benchmarks</a>
+            </div>
+        </div>
+        <div class="dropdown" >
+            <a href="chunksize.html" class="dropdownbtn">Chunksize version</a>
+            <div class="dropdown_content" style="width: 352px">
+                <a href="chunksize.html">Go to Chunksize as X-axis for Schedbench</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="arraysize.html" class="dropdownbtn">Array size version</a>
+            <div class="dropdown_content" style="width: 345px">
+                <a href="arraysize.html">Go to Array size as X-axis for Arraybench</a>
+            </div>
+        </div>
+    </div>
+    <div class="part_body" style="margin-top: 13px; padding-top: 17px">
+        <div class="upperSection">
+            <div id="visualisationArea"></div>
+            <div id="scaleChoice_y">
+                <div class="scaleY"><input type="radio" id="checkValue_y" name="scale method_y" value="1" checked><span>line scale</span></div>
+                <div class="scaleY"><input type="radio" id="checkLog_y" name="scale method_y" value="0"><span>log10 scale</span></div>
+            </div>
+        </div>
+        <div id="scaleChoice_x">
+            <input type="radio" id="checkValue_x" name="scale method_x" value="1">line scale
+            <input type="radio" id="checkLog_x" name="scale method_x" value="0" checked="checked">log2 scale
+        </div>
+    </div>
+    <div class="part_body" style="margin-top: 10px; padding-top: 20px; margin-bottom: 12px">
+        <div class="selectArea">
+            <div id="showSlectedOptions">
+                <table id="optionsTable">
+                    <tr>
+                        <th>Scheduling directives</th>
+                        <th>&nbspPlatforms 	&nbsp</th>
+                        <th>&nbspNumber of threads&nbsp</th>
+                        <th>&nbspCompilers&nbsp</th>
+                        <th>&nbspDelete operation&nbsp</th>
+                    </tr>
+                </table>
+                <input class="clearButton" type="button" value="Clear" onclick="clearOption()">
+            </div>
+            <div class="addOptionArea">
+                <select id="sched_directives">
+                    <option value="0" class="defaultFont">Scheduling directives</option>
+                    <option value="STATIC, n">STATIC, n</option>
+                    <option value="DYNAMIC, n">DYNAMIC, n</option>
+                    <option value="GUIDED, n">GUIDED, n</option>
+                    <option value="STATIC">STATIC</option>
+                </select>
+
+                <select id="platforms" onchange="benchmark_compiler_threads(this.value)">
+                    <option value="0" class="defaultFont">Platforms</option>
+                    <option value="Cirrus">Cirrus</option>
+                    <option value="ARCHER2">ARCHER2</option>
+                    <option value="Fulhame">Fulhame</option>
+                </select>
+
+                <select id="num_of_threads">
+                    <option value="0" class="defaultFont">Num of threads</option>
+                    <option value="0">Please choose Platforms firstly</option>
+                </select>
+
+                <select id="compilers">
+                    <option value="0" class="defaultFont">Compilers</option>
+                    <option value="0">Please choose Platforms firstly</option>
+                </select>
+
+                <input type="button" value="Add" onclick="addOption()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

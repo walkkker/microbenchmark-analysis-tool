@@ -1,0 +1,57 @@
+Running OpenMP benchmark version 3.0
+	16 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	84 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 40960 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.077587   0.077547   0.077685    0.000046      0
+
+reference time 1 time     = 0.077587 microseconds +/- 0.000090
+
+--------------------------------------------------------
+Computing PRIVATE 243 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                3.983093   3.943279   4.207288    0.075475      0
+
+PRIVATE 243 time     = 3.983093 microseconds +/- 0.147931
+PRIVATE 243 overhead = 3.905506 microseconds +/- 0.148021
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 243 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                4.174280   4.041905   4.233097    0.063463      0
+
+FIRSTPRIVATE 243 time     = 4.174280 microseconds +/- 0.124388
+FIRSTPRIVATE 243 overhead = 4.096692 microseconds +/- 0.124478
+
+--------------------------------------------------------
+Computing COPYPRIVATE 243 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                7.965081   7.764585   8.120874    0.103400      0
+
+COPYPRIVATE 243 time     = 7.965081 microseconds +/- 0.202664
+COPYPRIVATE 243 overhead = 7.887494 microseconds +/- 0.202754
+
+--------------------------------------------------------
+Computing COPYIN 243 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                6.006373   5.235815   7.085968    0.899395      0
+
+COPYIN 243 time     = 6.006373 microseconds +/- 1.762814
+COPYIN 243 overhead = 5.928785 microseconds +/- 1.762904
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/lustre/sw/gcc/8.2.0/libexec/gcc/x86_64-pc-linux-gnu/8.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-8.2.0/configure --prefix=/lustre/sw/gcc/8.2.0 --disable-multilib --with-system-zlib --enable-languages=c,c++,fortran
+Thread model: posix
+gcc version 8.2.0 (GCC) 

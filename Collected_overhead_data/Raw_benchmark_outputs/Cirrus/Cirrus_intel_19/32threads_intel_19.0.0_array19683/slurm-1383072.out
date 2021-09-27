@@ -1,0 +1,51 @@
+Running OpenMP benchmark version 3.0
+	32 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	490 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.245987   0.245706   0.246288    0.000211      0
+
+reference time 1 time     = 0.245987 microseconds +/- 0.000414
+
+--------------------------------------------------------
+Computing PRIVATE 19683 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                13.277158   2.205372   16.081333    5.482983      0
+
+PRIVATE 19683 time     = 13.277158 microseconds +/- 10.746646
+PRIVATE 19683 overhead = 13.031171 microseconds +/- 10.747060
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 19683 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                16.722456   16.674399   16.836822    0.032272      1
+
+FIRSTPRIVATE 19683 time     = 16.722456 microseconds +/- 0.063253
+FIRSTPRIVATE 19683 overhead = 16.476469 microseconds +/- 0.063667
+
+--------------------------------------------------------
+Computing COPYPRIVATE 19683 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                28.458089   27.850270   29.188395    0.407515      0
+
+COPYPRIVATE 19683 time     = 28.458089 microseconds +/- 0.798729
+COPYPRIVATE 19683 overhead = 28.212102 microseconds +/- 0.799143
+
+--------------------------------------------------------
+Computing COPYIN 19683 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                17.022491   16.152859   20.551682    1.332994      0
+
+COPYIN 19683 time     = 17.022491 microseconds +/- 2.612668
+COPYIN 19683 overhead = 16.776504 microseconds +/- 2.613082
+icc version 19.0.0.117 (gcc version 6.3.0 compatibility)

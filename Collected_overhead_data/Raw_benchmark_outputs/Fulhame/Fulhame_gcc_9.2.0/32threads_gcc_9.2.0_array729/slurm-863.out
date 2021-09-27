@@ -1,0 +1,60 @@
+PrgEnv/gnu-9.2/openmpi-4.0.2(13):ERROR:150: Module 'PrgEnv/gnu-9.2/openmpi-4.0.2' conflicts with the currently loaded module(s) 'PrgEnv/arm-20.0/openmpi-4.0.2'
+PrgEnv/gnu-9.2/openmpi-4.0.2(13):ERROR:102: Tcl command execution failed: conflict	      PrgEnv/arm-20.0
+
+Running OpenMP benchmark version 3.0
+	32 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	56 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.103659   0.103491   0.104526    0.000300      0
+
+reference time 1 time     = 0.103659 microseconds +/- 0.000588
+
+--------------------------------------------------------
+Computing PRIVATE 729 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                185.507149   23.325998   1375.892479    414.811873      0
+
+PRIVATE 729 time     = 185.507149 microseconds +/- 813.031271
+PRIVATE 729 overhead = 185.403490 microseconds +/- 813.031859
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 729 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                23.939633   23.692474   24.583569    0.196797      1
+
+FIRSTPRIVATE 729 time     = 23.939633 microseconds +/- 0.385722
+FIRSTPRIVATE 729 overhead = 23.835974 microseconds +/- 0.386310
+
+--------------------------------------------------------
+Computing COPYPRIVATE 729 time using 40 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                53.164504   50.190394   94.252545    9.679402      1
+
+COPYPRIVATE 729 time     = 53.164504 microseconds +/- 18.971628
+COPYPRIVATE 729 overhead = 53.060844 microseconds +/- 18.972217
+
+--------------------------------------------------------
+Computing COPYIN 729 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                35.143679   34.315442   40.661078    1.316938      1
+
+COPYIN 729 time     = 35.143679 microseconds +/- 2.581198
+COPYIN 729 overhead = 35.040020 microseconds +/- 2.581786
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux/bin/../libexec/gcc/aarch64-linux/9.2.0/lto-wrapper
+Target: aarch64-linux
+Configured with: ../configure --prefix /tmp/plgbuild/abs_build/822059_27751/trunk/rel_work/arm_builder/components/builder/work/current_tree/AArch64/opt/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux --enable-languages=c,c++,go,fortran --disable-multilib --enable-lto --disable-werror --enable-stage1-checking --enable-checking=release --with-build-config=bootstrap-debug --enable-plugins --enable-gnu-indirect-function --target aarch64-linux --host aarch64-linux --with-build-sysroot=/tmp/plgbuild/abs_build/822059_27751/trunk/rel_work/arm_builder/components/builder/roots/armada/SysRoots/SUSE/SUSE_12_aarch64.rootfs --with-pkgversion=ARM-build-3
+Thread model: posix
+gcc version 9.2.0 (ARM-build-3) 

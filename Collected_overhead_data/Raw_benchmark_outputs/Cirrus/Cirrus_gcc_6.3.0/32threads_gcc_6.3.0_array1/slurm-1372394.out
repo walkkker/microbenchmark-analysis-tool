@@ -1,0 +1,57 @@
+Running OpenMP benchmark version 3.0
+	32 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	76 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 40960 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.066619   0.066533   0.066707    0.000049      0
+
+reference time 1 time     = 0.066619 microseconds +/- 0.000097
+
+--------------------------------------------------------
+Computing PRIVATE 1 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                5.576282   5.422688   5.849481    0.080081      1
+
+PRIVATE 1 time     = 5.576282 microseconds +/- 0.156960
+PRIVATE 1 overhead = 5.509663 microseconds +/- 0.157056
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 1 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                5.548271   5.515433   5.572257    0.015702      0
+
+FIRSTPRIVATE 1 time     = 5.548271 microseconds +/- 0.030775
+FIRSTPRIVATE 1 overhead = 5.481652 microseconds +/- 0.030872
+
+--------------------------------------------------------
+Computing COPYPRIVATE 1 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                9.128117   8.891860   9.249747    0.101159      0
+
+COPYPRIVATE 1 time     = 9.128117 microseconds +/- 0.198271
+COPYPRIVATE 1 overhead = 9.061497 microseconds +/- 0.198368
+
+--------------------------------------------------------
+Computing COPYIN 1 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                7.145734   7.002681   7.213478    0.058664      0
+
+COPYIN 1 time     = 7.145734 microseconds +/- 0.114982
+COPYIN 1 overhead = 7.079114 microseconds +/- 0.115079
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/lustre/sw/gcc/6.3.0/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-6.3.0/configure --prefix=/lustre/sw/gcc/6.3.0 --disable-multilib --with-system-zlib --enable-languages=c,c++,fortran
+Thread model: posix
+gcc version 6.3.0 (GCC) 

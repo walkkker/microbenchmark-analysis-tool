@@ -1,0 +1,58 @@
+Running OpenMP benchmark version 3.0
+	8 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	50 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.107893   0.106776   0.109280    0.000731      0
+
+reference time 1 time     = 0.107893 microseconds +/- 0.001432
+
+--------------------------------------------------------
+Computing PRIVATE 6561 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                286.149099   1.606531   711.845700    345.138915      0
+
+PRIVATE 6561 time     = 286.149099 microseconds +/- 676.472273
+PRIVATE 6561 overhead = 286.041205 microseconds +/- 676.473705
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 6561 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                5.252787   5.237095   5.275775    0.012590      0
+
+FIRSTPRIVATE 6561 time     = 5.252787 microseconds +/- 0.024677
+FIRSTPRIVATE 6561 overhead = 5.144893 microseconds +/- 0.026109
+
+--------------------------------------------------------
+Computing COPYPRIVATE 6561 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                11.098790   10.920566   11.272987    0.094145      0
+
+COPYPRIVATE 6561 time     = 11.098790 microseconds +/- 0.184525
+COPYPRIVATE 6561 overhead = 10.990897 microseconds +/- 0.185957
+
+--------------------------------------------------------
+Computing COPYIN 6561 time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                6.560406   5.837470   7.458980    0.768379      0
+
+COPYIN 6561 time     = 6.560406 microseconds +/- 1.506024
+COPYIN 6561 overhead = 6.452512 microseconds +/- 1.507456
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-10.1/bin/../libexec/gcc/aarch64-unknown-linux-gnu/10.1.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ../configure --prefix=/opt/arm/gcc-10.1 --disable-multilib --enable-langagues=c,c++,fortran
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 (GCC) 

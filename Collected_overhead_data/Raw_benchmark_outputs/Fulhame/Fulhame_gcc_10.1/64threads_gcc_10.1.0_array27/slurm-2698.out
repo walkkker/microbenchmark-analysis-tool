@@ -1,0 +1,58 @@
+Running OpenMP benchmark version 3.0
+	64 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	62 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.110335   0.109607   0.111313    0.000481      0
+
+reference time 1 time     = 0.110335 microseconds +/- 0.000943
+
+--------------------------------------------------------
+Computing PRIVATE 27 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1281.777062   762.811257   1482.252264    209.136662      0
+
+PRIVATE 27 time     = 1281.777062 microseconds +/- 409.907858
+PRIVATE 27 overhead = 1281.666726 microseconds +/- 409.908801
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 27 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1305.690310   972.451363   1391.416509    110.156080      1
+
+FIRSTPRIVATE 27 time     = 1305.690310 microseconds +/- 215.905916
+FIRSTPRIVATE 27 overhead = 1305.579975 microseconds +/- 215.906859
+
+--------------------------------------------------------
+Computing COPYPRIVATE 27 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2526.105572   1986.664953   2808.853006    199.056213      0
+
+COPYPRIVATE 27 time     = 2526.105572 microseconds +/- 390.150178
+COPYPRIVATE 27 overhead = 2525.995237 microseconds +/- 390.151121
+
+--------------------------------------------------------
+Computing COPYIN 27 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                296.042059   12.349244   2036.187239    669.402629      0
+
+COPYIN 27 time     = 296.042059 microseconds +/- 1312.029153
+COPYIN 27 overhead = 295.931723 microseconds +/- 1312.030096
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-10.1/bin/../libexec/gcc/aarch64-unknown-linux-gnu/10.1.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ../configure --prefix=/opt/arm/gcc-10.1 --disable-multilib --enable-langagues=c,c++,fortran
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 (GCC) 

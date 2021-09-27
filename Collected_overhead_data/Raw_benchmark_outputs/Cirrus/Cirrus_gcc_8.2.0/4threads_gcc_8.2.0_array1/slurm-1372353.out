@@ -1,0 +1,57 @@
+Running OpenMP benchmark version 3.0
+	4 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	114 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.119719   0.112221   0.121515    0.002915      0
+
+reference time 1 time     = 0.119719 microseconds +/- 0.005714
+
+--------------------------------------------------------
+Computing PRIVATE 1 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.433369   1.352921   1.524147    0.084052      0
+
+PRIVATE 1 time     = 1.433369 microseconds +/- 0.164742
+PRIVATE 1 overhead = 1.313649 microseconds +/- 0.170456
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 1 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.356159   1.354319   1.358457    0.001206      0
+
+FIRSTPRIVATE 1 time     = 1.356159 microseconds +/- 0.002364
+FIRSTPRIVATE 1 overhead = 1.236439 microseconds +/- 0.008078
+
+--------------------------------------------------------
+Computing COPYPRIVATE 1 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.790897   2.777099   2.807516    0.008011      0
+
+COPYPRIVATE 1 time     = 2.790897 microseconds +/- 0.015701
+COPYPRIVATE 1 overhead = 2.671178 microseconds +/- 0.021415
+
+--------------------------------------------------------
+Computing COPYIN 1 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.850776   1.846861   1.857611    0.002890      0
+
+COPYIN 1 time     = 1.850776 microseconds +/- 0.005664
+COPYIN 1 overhead = 1.731056 microseconds +/- 0.011378
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/lustre/sw/gcc/8.2.0/libexec/gcc/x86_64-pc-linux-gnu/8.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-8.2.0/configure --prefix=/lustre/sw/gcc/8.2.0 --disable-multilib --with-system-zlib --enable-languages=c,c++,fortran
+Thread model: posix
+gcc version 8.2.0 (GCC) 

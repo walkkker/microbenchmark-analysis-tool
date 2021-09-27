@@ -1,0 +1,16 @@
+#!/bin/bash --login
+
+#SBATCH -p workq
+#SBATCH --time=00:30:00
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=1
+#SBATCH --cpus-per-task=64
+
+module load PrgEnv/arm-20.0
+
+cd $SLURM_SUBMIT_DIR
+
+export OMP_NUM_THREADS=16
+
+srun --cpu-bind=cores ../arraybench_81
+armclang -v

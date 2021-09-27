@@ -1,0 +1,51 @@
+Running OpenMP benchmark version 3.0
+	2 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	540 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.229570   0.228523   0.230665    0.000609      0
+
+reference time 1 time     = 0.229570 microseconds +/- 0.001194
+
+--------------------------------------------------------
+Computing PRIVATE 729 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.800258   0.799540   0.801124    0.000445      0
+
+PRIVATE 729 time     = 0.800258 microseconds +/- 0.000873
+PRIVATE 729 overhead = 0.570688 microseconds +/- 0.002067
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 729 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.895779   0.893325   0.904687    0.002441      1
+
+FIRSTPRIVATE 729 time     = 0.895779 microseconds +/- 0.004784
+FIRSTPRIVATE 729 overhead = 0.666209 microseconds +/- 0.005978
+
+--------------------------------------------------------
+Computing COPYPRIVATE 729 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.719575   1.689047   1.735985    0.019905      0
+
+COPYPRIVATE 729 time     = 1.719575 microseconds +/- 0.039014
+COPYPRIVATE 729 overhead = 1.490006 microseconds +/- 0.040207
+
+--------------------------------------------------------
+Computing COPYIN 729 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.145760   1.142174   1.152791    0.003279      0
+
+COPYIN 729 time     = 1.145760 microseconds +/- 0.006426
+COPYIN 729 overhead = 0.916190 microseconds +/- 0.007620
+icc version 18.0.5 (gcc version 6.3.0 compatibility)

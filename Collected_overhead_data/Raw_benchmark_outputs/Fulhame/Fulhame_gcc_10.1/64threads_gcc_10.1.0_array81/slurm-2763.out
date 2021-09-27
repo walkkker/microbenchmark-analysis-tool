@@ -1,0 +1,58 @@
+Running OpenMP benchmark version 3.0
+	64 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	62 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.116183   0.116093   0.116662    0.000166      0
+
+reference time 1 time     = 0.116183 microseconds +/- 0.000325
+
+--------------------------------------------------------
+Computing PRIVATE 81 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1352.846245   1068.540849   1508.709509    99.603484      0
+
+PRIVATE 81 time     = 1352.846245 microseconds +/- 195.222829
+PRIVATE 81 overhead = 1352.730062 microseconds +/- 195.223153
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 81 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1339.200744   1192.923216   1424.487913    62.348893      0
+
+FIRSTPRIVATE 81 time     = 1339.200744 microseconds +/- 122.203830
+FIRSTPRIVATE 81 overhead = 1339.084561 microseconds +/- 122.204155
+
+--------------------------------------------------------
+Computing COPYPRIVATE 81 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                990.559531   20.548981   2763.065184    1253.196845      0
+
+COPYPRIVATE 81 time     = 990.559531 microseconds +/- 2456.265817
+COPYPRIVATE 81 overhead = 990.443348 microseconds +/- 2456.266141
+
+--------------------------------------------------------
+Computing COPYIN 81 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1890.096830   1731.688075   2026.157652    72.579014      0
+
+COPYIN 81 time     = 1890.096830 microseconds +/- 142.254867
+COPYIN 81 overhead = 1889.980647 microseconds +/- 142.255192
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-10.1/bin/../libexec/gcc/aarch64-unknown-linux-gnu/10.1.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ../configure --prefix=/opt/arm/gcc-10.1 --disable-multilib --enable-langagues=c,c++,fortran
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 (GCC) 

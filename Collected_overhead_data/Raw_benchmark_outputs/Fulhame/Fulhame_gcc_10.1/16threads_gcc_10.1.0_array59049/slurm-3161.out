@@ -1,0 +1,58 @@
+Running OpenMP benchmark version 3.0
+	16 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	45 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.101888   0.097452   0.105484    0.002781      0
+
+reference time 1 time     = 0.101888 microseconds +/- 0.005451
+
+--------------------------------------------------------
+Computing PRIVATE 59049 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                357.914413   3.819773   785.644958    371.569205      0
+
+PRIVATE 59049 time     = 357.914413 microseconds +/- 728.275641
+PRIVATE 59049 overhead = 357.812526 microseconds +/- 728.281092
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 59049 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                37.946883   37.260819   39.779814    0.535325      1
+
+FIRSTPRIVATE 59049 time     = 37.946883 microseconds +/- 1.049238
+FIRSTPRIVATE 59049 overhead = 37.844995 microseconds +/- 1.054689
+
+--------------------------------------------------------
+Computing COPYPRIVATE 59049 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                104.887364   95.416047   113.029825    4.555896      0
+
+COPYPRIVATE 59049 time     = 104.887364 microseconds +/- 8.929557
+COPYPRIVATE 59049 overhead = 104.785477 microseconds +/- 8.935008
+
+--------------------------------------------------------
+Computing COPYIN 59049 time using 40 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                59.283520   58.895512   60.480018    0.363576      1
+
+COPYIN 59049 time     = 59.283520 microseconds +/- 0.712608
+COPYIN 59049 overhead = 59.181633 microseconds +/- 0.718059
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-10.1/bin/../libexec/gcc/aarch64-unknown-linux-gnu/10.1.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ../configure --prefix=/opt/arm/gcc-10.1 --disable-multilib --enable-langagues=c,c++,fortran
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 (GCC) 

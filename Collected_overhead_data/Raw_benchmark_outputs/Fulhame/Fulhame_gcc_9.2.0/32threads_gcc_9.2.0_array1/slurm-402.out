@@ -1,0 +1,57 @@
+Running OpenMP benchmark version 3.0
+	32 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	56 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.099148   0.098714   0.099635    0.000236      0
+
+reference time 1 time     = 0.099148 microseconds +/- 0.000463
+
+--------------------------------------------------------
+Computing PRIVATE 1 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                22.051648   21.859159   22.176065    0.075678      0
+
+PRIVATE 1 time     = 22.051648 microseconds +/- 0.148330
+PRIVATE 1 overhead = 21.952500 microseconds +/- 0.148793
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 1 time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                22.007410   21.871692   22.247946    0.086837      0
+
+FIRSTPRIVATE 1 time     = 22.007410 microseconds +/- 0.170201
+FIRSTPRIVATE 1 overhead = 21.908262 microseconds +/- 0.170664
+
+--------------------------------------------------------
+Computing COPYPRIVATE 1 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                46.313321   46.022900   47.062198    0.213561      1
+
+COPYPRIVATE 1 time     = 46.313321 microseconds +/- 0.418580
+COPYPRIVATE 1 overhead = 46.214173 microseconds +/- 0.419044
+
+--------------------------------------------------------
+Computing COPYIN 1 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                33.279815   33.002952   33.645262    0.137076      0
+
+COPYIN 1 time     = 33.279815 microseconds +/- 0.268668
+COPYIN 1 overhead = 33.180667 microseconds +/- 0.269132
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux/bin/../libexec/gcc/aarch64-linux/9.2.0/lto-wrapper
+Target: aarch64-linux
+Configured with: ../configure --prefix /tmp/plgbuild/abs_build/822059_27751/trunk/rel_work/arm_builder/components/builder/work/current_tree/AArch64/opt/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux --enable-languages=c,c++,go,fortran --disable-multilib --enable-lto --disable-werror --enable-stage1-checking --enable-checking=release --with-build-config=bootstrap-debug --enable-plugins --enable-gnu-indirect-function --target aarch64-linux --host aarch64-linux --with-build-sysroot=/tmp/plgbuild/abs_build/822059_27751/trunk/rel_work/arm_builder/components/builder/roots/armada/SysRoots/SUSE/SUSE_12_aarch64.rootfs --with-pkgversion=ARM-build-3
+Thread model: posix
+gcc version 9.2.0 (ARM-build-3) 

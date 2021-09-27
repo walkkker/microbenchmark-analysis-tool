@@ -1,0 +1,75 @@
+Unloading /usr/local/share/epcc-module/epcc-module-loader
+
+Warning: Unloading the epcc-setup-env module will stop many
+modules being available on the system. If you do this by
+accident, you can recover the situation with the command:
+
+	module load /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+
+Unloading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Unloading bolt/0.7
+Loading bolt/0.7
+Loading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Loading /usr/local/share/epcc-module/epcc-module-loader
+
+Loading epcc-job-env
+  Loading requirement: bolt/0.7
+    /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Running OpenMP benchmark version 3.0
+	1 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	114 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 40960 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.084429   0.083285   0.087648    0.001067      1
+
+reference time 1 time     = 0.084429 microseconds +/- 0.002092
+
+--------------------------------------------------------
+Computing PRIVATE 9 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.192526   0.190817   0.194955    0.001180      0
+
+PRIVATE 9 time     = 0.192526 microseconds +/- 0.002313
+PRIVATE 9 overhead = 0.108096 microseconds +/- 0.004404
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 9 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.195672   0.193564   0.196696    0.000992      0
+
+FIRSTPRIVATE 9 time     = 0.195672 microseconds +/- 0.001944
+FIRSTPRIVATE 9 overhead = 0.111243 microseconds +/- 0.004036
+
+--------------------------------------------------------
+Computing COPYPRIVATE 9 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.210763   0.207103   0.217312    0.003073      0
+
+COPYPRIVATE 9 time     = 0.210763 microseconds +/- 0.006023
+COPYPRIVATE 9 overhead = 0.126334 microseconds +/- 0.008115
+
+--------------------------------------------------------
+Computing COPYIN 9 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.198766   0.194773   0.203799    0.003382      0
+
+COPYIN 9 time     = 0.198766 microseconds +/- 0.006629
+COPYIN 9 overhead = 0.114337 microseconds +/- 0.008721
+Cray clang version 10.0.4 (ffb772459f6195ccd74395703e557b253fc8ee27)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/cray/pe/cce/10.0.4/cce-clang/x86_64/share/../bin
+Found candidate GCC installation: /opt/gcc/8.1.0/snos/lib/gcc/x86_64-suse-linux/8.1.0
+Selected GCC installation: /opt/gcc/8.1.0/snos/lib/gcc/x86_64-suse-linux/8.1.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64

@@ -1,0 +1,51 @@
+Running OpenMP benchmark version 3.0
+	16 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	490 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.245947   0.245427   0.246288    0.000225      0
+
+reference time 1 time     = 0.245947 microseconds +/- 0.000441
+
+--------------------------------------------------------
+Computing PRIVATE 59049 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.571793   1.567975   1.574308    0.001670      0
+
+PRIVATE 59049 time     = 1.571793 microseconds +/- 0.003273
+PRIVATE 59049 overhead = 1.325846 microseconds +/- 0.003714
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 59049 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                26.050508   25.913119   26.288629    0.111417      0
+
+FIRSTPRIVATE 59049 time     = 26.050508 microseconds +/- 0.218378
+FIRSTPRIVATE 59049 overhead = 25.804561 microseconds +/- 0.218819
+
+--------------------------------------------------------
+Computing COPYPRIVATE 59049 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                53.084940   49.087405   67.049265    4.633161      1
+
+COPYPRIVATE 59049 time     = 53.084940 microseconds +/- 9.080995
+COPYPRIVATE 59049 overhead = 52.838993 microseconds +/- 9.081437
+
+--------------------------------------------------------
+Computing COPYIN 59049 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                27.279854   27.143955   27.453899    0.089660      0
+
+COPYIN 59049 time     = 27.279854 microseconds +/- 0.175733
+COPYIN 59049 overhead = 27.033907 microseconds +/- 0.176174
+icc version 19.0.0.117 (gcc version 6.3.0 compatibility)

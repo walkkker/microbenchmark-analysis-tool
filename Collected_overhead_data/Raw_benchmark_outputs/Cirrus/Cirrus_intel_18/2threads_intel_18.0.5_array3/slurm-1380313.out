@@ -1,0 +1,51 @@
+Running OpenMP benchmark version 3.0
+	2 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	540 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.231265   0.231154   0.231457    0.000100      0
+
+reference time 1 time     = 0.231265 microseconds +/- 0.000196
+
+--------------------------------------------------------
+Computing PRIVATE 3 time using 5120 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.772618   0.771089   0.774628    0.000985      0
+
+PRIVATE 3 time     = 0.772618 microseconds +/- 0.001930
+PRIVATE 3 overhead = 0.541353 microseconds +/- 0.002126
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 3 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.797519   0.796560   0.799634    0.000722      0
+
+FIRSTPRIVATE 3 time     = 0.797519 microseconds +/- 0.001415
+FIRSTPRIVATE 3 overhead = 0.566255 microseconds +/- 0.001612
+
+--------------------------------------------------------
+Computing COPYPRIVATE 3 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.333863   1.330487   1.337938    0.002411      0
+
+COPYPRIVATE 3 time     = 1.333863 microseconds +/- 0.004725
+COPYPRIVATE 3 overhead = 1.102599 microseconds +/- 0.004922
+
+--------------------------------------------------------
+Computing COPYIN 3 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.033358   1.030415   1.042150    0.002402      1
+
+COPYIN 3 time     = 1.033358 microseconds +/- 0.004707
+COPYIN 3 overhead = 0.802093 microseconds +/- 0.004904
+icc version 18.0.5 (gcc version 6.3.0 compatibility)

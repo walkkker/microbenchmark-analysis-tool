@@ -1,0 +1,51 @@
+Running OpenMP benchmark version 3.0
+	32 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	490 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 10240 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.336368   0.233506   1.305365    0.315869      1
+
+reference time 1 time     = 0.336368 microseconds +/- 0.619103
+
+--------------------------------------------------------
+Computing PRIVATE 6561 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                29.845238   28.753281   30.696392    0.584943      0
+
+PRIVATE 6561 time     = 29.845238 microseconds +/- 1.146489
+PRIVATE 6561 overhead = 29.508870 microseconds +/- 1.765591
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 6561 time using 80 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                25.143176   6.049871   38.212538    15.942498      0
+
+FIRSTPRIVATE 6561 time     = 25.143176 microseconds +/- 31.247296
+FIRSTPRIVATE 6561 overhead = 24.806808 microseconds +/- 31.866399
+
+--------------------------------------------------------
+Computing COPYPRIVATE 6561 time using 320 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                11.102781   10.918081   11.231005    0.093962      0
+
+COPYPRIVATE 6561 time     = 11.102781 microseconds +/- 0.184165
+COPYPRIVATE 6561 overhead = 10.766413 microseconds +/- 0.803268
+
+--------------------------------------------------------
+Computing COPYIN 6561 time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                7.680655   7.402897   8.404255    0.282183      0
+
+COPYIN 6561 time     = 7.680655 microseconds +/- 0.553078
+COPYIN 6561 overhead = 7.344286 microseconds +/- 1.172181
+icc version 18.0.5 (gcc version 6.3.0 compatibility)

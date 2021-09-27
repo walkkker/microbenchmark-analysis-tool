@@ -1,0 +1,137 @@
+Unloading /usr/local/share/epcc-module/epcc-module-loader
+
+Warning: Unloading the epcc-setup-env module will stop many
+modules being available on the system. If you do this by
+accident, you can recover the situation with the command:
+
+	module load /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+
+Unloading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Unloading bolt/0.7
+Loading bolt/0.7
+Loading /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Loading /usr/local/share/epcc-module/epcc-module-loader
+
+Loading epcc-job-env
+  Loading requirement: bolt/0.7
+    /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
+Running OpenMP benchmark version 3.0
+	64 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	103 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 40960 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.086980   0.084817   0.088374    0.001134      0
+
+reference time 1 time     = 0.086980 microseconds +/- 0.002222
+
+--------------------------------------------------------
+Computing PARALLEL TASK time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                152.391798   136.986701   212.454051    15.472368      1
+
+PARALLEL TASK time     = 152.391798 microseconds +/- 30.325841
+PARALLEL TASK overhead = 152.304818 microseconds +/- 30.328063
+
+--------------------------------------------------------
+Computing MASTER TASK time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                225.301161   205.419958   265.128305    17.475613      0
+
+MASTER TASK time     = 225.301161 microseconds +/- 34.252202
+MASTER TASK overhead = 225.214181 microseconds +/- 34.254425
+
+--------------------------------------------------------
+Computing MASTER TASK BUSY SLAVES time using 640 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                3.399424   3.095997   3.846057    0.184687      0
+
+MASTER TASK BUSY SLAVES time     = 3.399424 microseconds +/- 0.361987
+MASTER TASK BUSY SLAVES overhead = 3.312444 microseconds +/- 0.364209
+
+--------------------------------------------------------
+Computing CONDITIONAL TASK time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.130084   0.128151   0.132960    0.001187      0
+
+CONDITIONAL TASK time     = 0.130084 microseconds +/- 0.002327
+CONDITIONAL TASK overhead = 0.043104 microseconds +/- 0.004549
+
+--------------------------------------------------------
+Computing TASK WAIT time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                282.510722   265.129283   296.581071    7.229237      0
+
+TASK WAIT time     = 282.510722 microseconds +/- 14.169304
+TASK WAIT overhead = 282.423742 microseconds +/- 14.171526
+
+--------------------------------------------------------
+Computing TASK BARRIER time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                351.910435   338.743581   370.477885    7.988122      0
+
+TASK BARRIER time     = 351.910435 microseconds +/- 15.656719
+TASK BARRIER overhead = 351.823455 microseconds +/- 15.658941
+
+--------------------------------------------------------
+Computing NESTED TASK time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                95.592872   88.211702   100.927841    3.350723      0
+
+NESTED TASK time     = 95.592872 microseconds +/- 6.567416
+NESTED TASK overhead = 95.505892 microseconds +/- 6.569638
+
+--------------------------------------------------------
+Computing NESTED MASTER TASK time using 20 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                195.678696   173.083926   221.472932    14.741983      0
+
+NESTED MASTER TASK time     = 195.678696 microseconds +/- 28.894287
+NESTED MASTER TASK overhead = 195.591716 microseconds +/- 28.896509
+
+--------------------------------------------------------
+Computing reference time 2 time using 40960 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.086851   0.084935   0.088318    0.001023      0
+
+reference time 2 time     = 0.086851 microseconds +/- 0.002006
+
+--------------------------------------------------------
+Computing BRANCH TASK TREE time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                76.203826   73.531020   78.800140    1.639356      0
+
+BRANCH TASK TREE time     = 76.203826 microseconds +/- 3.213138
+BRANCH TASK TREE overhead = 76.116975 microseconds +/- 3.215143
+
+--------------------------------------------------------
+Computing LEAF TASK TREE time using 160 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                74.778769   71.816455   77.899708    1.856913      0
+
+LEAF TASK TREE time     = 74.778769 microseconds +/- 3.639549
+LEAF TASK TREE overhead = 74.691918 microseconds +/- 3.641554
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/10.1.0/bin/../snos/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/gcc/10.1.0/snos/libexec/gcc/x86_64-suse-linux/10.1.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-10.1.0-202007190429.e9e165705b91a/configure --prefix=/opt/gcc/10.1.0/snos --disable-nls --libdir=/opt/gcc/10.1.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/10.1.0/snos/include/g++ --with-slibdir=/opt/gcc/10.1.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.1.0 20200507 (Cray Inc.) (GCC) 

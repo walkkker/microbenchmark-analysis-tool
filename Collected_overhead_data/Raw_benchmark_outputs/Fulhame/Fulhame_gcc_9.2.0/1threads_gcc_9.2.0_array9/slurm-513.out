@@ -1,0 +1,57 @@
+Running OpenMP benchmark version 3.0
+	1 thread(s)
+	20 outer repetitions
+	1000.00 test time (microseconds)
+	50 delay length (iterations) 
+	0.100000 delay time (microseconds)
+
+--------------------------------------------------------
+Computing reference time 1 time using 20480 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.112647   0.109029   0.116984    0.002446      0
+
+reference time 1 time     = 0.112647 microseconds +/- 0.004794
+
+--------------------------------------------------------
+Computing PRIVATE 9 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.921318   0.913641   0.925721    0.003760      0
+
+PRIVATE 9 time     = 0.921318 microseconds +/- 0.007370
+PRIVATE 9 overhead = 0.808671 microseconds +/- 0.012165
+
+--------------------------------------------------------
+Computing FIRSTPRIVATE 9 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                0.934513   0.925758   0.943906    0.005555      0
+
+FIRSTPRIVATE 9 time     = 0.934513 microseconds +/- 0.010887
+FIRSTPRIVATE 9 overhead = 0.821866 microseconds +/- 0.015682
+
+--------------------------------------------------------
+Computing COPYPRIVATE 9 time using 1280 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                2.051197   2.044887   2.061282    0.004359      0
+
+COPYPRIVATE 9 time     = 2.051197 microseconds +/- 0.008545
+COPYPRIVATE 9 overhead = 1.938550 microseconds +/- 0.013339
+
+--------------------------------------------------------
+Computing COPYIN 9 time using 2560 reps
+
+Sample_size       Average     Min         Max          S.D.          Outliers
+ 20                1.424505   1.396256   1.451229    0.025133      0
+
+COPYIN 9 time     = 1.424505 microseconds +/- 0.049260
+COPYIN 9 overhead = 1.311858 microseconds +/- 0.054054
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/scratch3/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux/bin/../libexec/gcc/aarch64-linux/9.2.0/lto-wrapper
+Target: aarch64-linux
+Configured with: ../configure --prefix /tmp/plgbuild/abs_build/822059_27751/trunk/rel_work/arm_builder/components/builder/work/current_tree/AArch64/opt/arm/gcc-9.2.0_Generic-AArch64_SUSE-12_aarch64-linux --enable-languages=c,c++,go,fortran --disable-multilib --enable-lto --disable-werror --enable-stage1-checking --enable-checking=release --with-build-config=bootstrap-debug --enable-plugins --enable-gnu-indirect-function --target aarch64-linux --host aarch64-linux --with-build-sysroot=/tmp/plgbuild/abs_build/822059_27751/trunk/rel_work/arm_builder/components/builder/roots/armada/SysRoots/SUSE/SUSE_12_aarch64.rootfs --with-pkgversion=ARM-build-3
+Thread model: posix
+gcc version 9.2.0 (ARM-build-3) 
